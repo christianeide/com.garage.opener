@@ -1,0 +1,25 @@
+{
+  "id": "com.garage.opener",
+  "version": "1.0.0",
+  "compatibility": ">=12.1.2",
+  "sdk": 3,
+  "platforms": ["local"],
+  "name": {
+    "en": "Garage Opener"
+  },
+  "description": {
+    "en": "Add this widget to your Dashboard to open and close your garage door. At the same time you can see the status of the garage door, and you can also set a delay for the open garage door notification."
+  },
+  "category": ["tools"],
+  "permissions": ["homey:manager:api"],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Christian Gogstad Eide",
+    "email": "christian@gogstadeide.no"
+  },
+  "esm": true
+}

@@ -1,0 +1,26 @@
+{
+  "name": {
+    "en": "Garage Opener"
+  },
+  "height": 76,
+  "settings": [],
+  "transparent": true,
+  "api": {
+    "getDeviceState": {
+      "method": "GET",
+      "path": "/"
+    },
+    "open": {
+      "method": "POST",
+      "path": "/open"
+    },
+    "close": {
+      "method": "POST",
+      "path": "/close"
+    },
+    "delay": {
+      "method": "POST",
+      "path": "/delay"
+    }
+  }
+}

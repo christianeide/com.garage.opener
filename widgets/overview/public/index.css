@@ -1,0 +1,99 @@
+.opener-wrapper {
+  display: flex;
+  gap: var(--homey-su-3);
+}
+
+.opener-card {
+  background-color: var(--homey-color-mono-200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--homey-su-2);
+  border-radius: var(--homey-border-radius-default);
+  font-size: var(--homey-font-size-small);
+}
+
+.opener-card:active {
+  background-color: var(--homey-color-mono-300);
+}
+
+.opener-card--open {
+  background-color: var(--homey-color-red-400);
+}
+
+.opener-card--open .opener-card__value {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.opener-card--large {
+  flex-grow: 2;
+}
+
+.opener-card--wide {
+  padding-left: var(--homey-su-4);
+  padding-right: var(--homey-su-4);
+}
+
+.opener-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--homey-su-2);
+}
+
+.opener-switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+}
+
+.opener-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.opener-switch__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+  border-radius: 34px;
+}
+
+.opener-switch__slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.opener-switch input:checked + .opener-switch__slider:before {
+  transform: translateX(26px);
+}
+
+.opener-card__value {
+  font-size: var(--homey-font-size-xlarge);
+  margin-top: var(--homey-su-1);
+  margin-right: var(--homey-su-2);
+  display: inline-block;
+  color: var(--homey-color-white);
+  border-radius: var(--homey-border-radius-small);
+  padding: var(--homey-su) var(--homey-su-2);
+  line-height: var(--homey-line-height-xlarge);
+  font-weight: var(--homey-font-weight-bold);
+  background-color: var(--homey-color-mono-100);
+}
+
+.opener-hours {
+  font-size: var(--homey-font-size-xlarge);
+}
