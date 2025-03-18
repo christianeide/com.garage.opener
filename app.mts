@@ -83,7 +83,7 @@ export default class GarageOpener extends Homey.App {
     const eventToDeviceName = {
       open: '1. Åpne garasje',
       close: '2. Lukk garasje',
-      delay: '3. Utsett varsel 2t',
+      delay: '3. Utsett varsel 3t',
     };
 
     const targetDeviceName = eventToDeviceName[event];
