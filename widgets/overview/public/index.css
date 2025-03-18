@@ -21,6 +21,17 @@
   background-color: var(--homey-color-red-400);
 }
 
+.opener-card--disabled {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--homey-color-mono-200),
+    var(--homey-color-mono-200) 5px,
+    var(--homey-color-mono-100) 5px,
+    var(--homey-color-mono-100) 10px
+  );
+  color: var(--homey-color-mono-400) !important;
+}
+
 .opener-card--open .opener-card__value {
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -96,4 +107,5 @@
 
 .opener-hours {
   font-size: var(--homey-font-size-xlarge);
+  color: inherit;
 }

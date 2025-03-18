@@ -90,7 +90,9 @@ function WidgetApp() {
         </label>
       </div>
       <div
-        class="opener-card opener-card--wide"
+        class="opener-card opener-card--wide ${statusGarageDoor
+          ? ''
+          : 'opener-card--disabled'}"
         onClick=${handleDelayNotification}
       >
         <p>
